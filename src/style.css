@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+html,
+body {
+  overflow-x: scroll;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: #68857a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todolist {
+  margin: 20px 40px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.todo-header {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+  font-size: 30px;
+}
+
+.todo-header a {
+  margin: auto 1%;
+}
+
+.todo-form {
+  margin: 10px;
+}
+
+#form {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+}
+
+.new-task {
+  outline: none;
+  border: none;
+  margin: auto 1%;
+  font-size: 20px;
+  font-style: italic;
+  width: 100%;
+}
+
+.submit {
+  outline: none;
+  border: none;
+  margin: auto 0.25%;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.to-dos li {
+  list-style-type: none;
+  height: 70px;
+  padding: 10px 0 10px 20px;
+  position: relative;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.to-dos li input {
+  margin: auto 0 auto 1%;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.to-dos li .todotask {
+  outline: none;
+  border: none;
+  width: 80%;
+}
+
+.to-dos li .todotask:focus {
+  outline: none;
+}
+
+.to-dos li i {
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+}
+
+.clear-all {
+  text-align: center;
+  font-size: medium;
+  width: 100%;
+  height: 70px;
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
+}
